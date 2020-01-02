@@ -6,8 +6,9 @@ Gera o código-fonte de uma classe Java com construtor, getters & setters.
 GeraClasseJava 0.1 - Daniel Callegari, Jan 2020
 
 ## Uso:
-	java GeraClasseJava NomeClasse [tipo:nomeAtributo ...]
+	GeraClasseJava NomeClasse tipo:nomeAtributo1 [tipo:nomeAtributo2 ...]
 	Tipos: s=String, d=int, f=double, c=char
+    Pelo menos um atributo deve ser especificado.
 
 ## Exemplo:
 	java -jar GeraClasseJava.jar Funcionario s:nome d:anoNasc f:salario c:sexo
