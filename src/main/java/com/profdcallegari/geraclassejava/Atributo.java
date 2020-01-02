@@ -7,7 +7,7 @@ public class Atributo {
     public Atributo(String idAtr, char tipoAtr) {
         this.identificador = idAtr.trim();
         
-        if ("sdfc".contains(""+tipoAtr))
+        if ("sdfcb".contains(""+tipoAtr))
             this.tipo = tipoAtr;
         else
             this.tipo = '?';
@@ -24,6 +24,7 @@ public class Atributo {
             case 'd': return "int";
             case 'f': return "double";
             case 'c': return "char";
+            case 'b': return "boolean";
         }
         
         return "TipoDesconhecido";
@@ -43,7 +44,12 @@ public class Atributo {
     }
     
     public String gerarMetodoGet () {
-        String templateGet = "\tpublic TIPORET getNOMEATRMOD () {\n\t\treturn this.NOMEATRIB;\n\t}\n";
+        // Padrao: isAtributo para boolean e getAtributo para demais tipos
+        String templateGet;
+        if (this.tipo == 'b')
+            templateGet = "\tpublic TIPORET isNOMEATRMOD () {\n\t\treturn this.NOMEATRIB;\n\t}\n";
+        else
+            templateGet = "\tpublic TIPORET getNOMEATRMOD () {\n\t\treturn this.NOMEATRIB;\n\t}\n";
         
         String corpoGet = templateGet
                 .replace("TIPORET", getTipoPorExtenso())

@@ -7,7 +7,7 @@ GeraClasseJava 0.1 - Daniel Callegari, Jan 2020
 
 ## Uso:
 	GeraClasseJava NomeClasse tipo:nomeAtributo1 [tipo:nomeAtributo2 ...]
-	Tipos: s=String, d=int, f=double, c=char
+	Tipos: s=String, d=int, f=double, c=char, b=boolean
     Pelo menos um atributo deve ser especificado.
 
 ## Exemplo:
