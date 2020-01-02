@@ -32,12 +32,11 @@ public class GeraClasseJava {
         Classe novaClasse = new Classe(nomeClasse);
 
         // Obtém os atributos (se existirem)
-        int nroAtributos = 0;
         for (int i = 1; i < args.length; i++) {
             String sAtributo = args[i]; // tipo:nomeAtributo
 
             char tipoAtributo = sAtributo.charAt(0);
-            char doisPontos = sAtributo.charAt(1);
+            //char doisPontos = sAtributo.charAt(1);
             String idAtributo = sAtributo.substring(2);
 
             novaClasse.adicionarAtributo(idAtributo, tipoAtributo);
@@ -86,10 +85,10 @@ public class GeraClasseJava {
 
     private static void mostrarAjudaESair() {
         System.out.println(CABECALHO);
-        System.out.println("Gera o código-fonte de uma classe Java com getters & setters.");
-        System.out.println("Uso:\n\tjava GeraClasseJava NomeClasse [tipo:nomeAtributo ...]");
+        System.out.println("Gera o codigo-fonte de uma classe Java com getters & setters.");
+        System.out.println("Uso:\n\tGeraClasseJava NomeClasse tipo:nomeAtributo1 [tipo:nomeAtributo2 ...]");
         System.out.println("\tTipos: s=String, d=int, f=double, c=char");
-        System.out.println("Exemplo:\n\tjava GeraClasseJava Funcionario s:nome d:anoNasc f:salario c:sexo");
+        System.out.println("Exemplo:\n\tjava -jar GeraClasseJava.jar Funcionario s:nome d:anoNasc f:salario c:sexo");
         System.out.println();
         System.exit(0);
     }

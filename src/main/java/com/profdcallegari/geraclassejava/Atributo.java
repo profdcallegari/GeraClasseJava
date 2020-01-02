@@ -26,7 +26,7 @@ public class Atributo {
             case 'c': return "char";
         }
         
-        return "*BUG*";
+        return "TipoDesconhecido";
     }
     
     public String gerarDeclaracao () {
