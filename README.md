@@ -11,9 +11,9 @@ GeraClasseJava 0.1 - Daniel Callegari, Jan 2020
     Pelo menos um atributo deve ser especificado.
 
 ## Exemplo:
-	java -jar GeraClasseJava.jar Funcionario s:nome d:anoNasc f:salario c:sexo
+	java -jar GeraClasseJava.jar Funcionario s:nome d:anoNasc f:salario
   
-irá produzir o arquivo Funcionario.java com o seguinte conteúdo:
+irá produzir o arquivo **Funcionario.java** com o seguinte conteúdo:
 
 ```java
 public class Funcionario {
