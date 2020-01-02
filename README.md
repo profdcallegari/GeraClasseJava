@@ -1,6 +1,6 @@
 # GeraClasseJava
 Um gerador bastante simplificado de classes java via linha de comando.
-Gera o código-fonte de uma classe Java com getters & setters.
+Gera o código-fonte de uma classe Java com construtor, getters & setters.
 
 ## Versões
 GeraClasseJava 0.1 - Daniel Callegari, Jan 2020
@@ -10,7 +10,7 @@ GeraClasseJava 0.1 - Daniel Callegari, Jan 2020
 	Tipos: s=String, d=int, f=double, c=char
 
 ## Exemplo:
-	java GeraClasseJava Funcionario s:nome d:anoNasc f:salario c:sexo
+	java -jar GeraClasseJava.jar Funcionario s:nome d:anoNasc f:salario c:sexo
   
 irá produzir o arquivo Funcionario.java com o seguinte conteúdo:
 
