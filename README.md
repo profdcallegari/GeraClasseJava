@@ -16,21 +16,16 @@ GeraClasseJava 0.1 - Daniel Callegari, Jan 2020
 irá produzir o arquivo Funcionario.java com o seguinte conteúdo:
 
 ```java
-// Arquivo gerado automaticamente por
-// GeraClasseJava 0.1 - Daniel Callegari, Jan 2020
-
 public class Funcionario {
 
 	private String nome;
 	private int anoNasc;
 	private double salario;
-	private char sexo;
 
-	public Funcionario (String nome, int anoNasc, double salario, char sexo) {
+	public Funcionario (String nome, int anoNasc, double salario) {
 		this.setNome(nome);
 		this.setAnoNasc(anoNasc);
 		this.setSalario(salario);
-		this.setSexo(sexo);
 	}
 
 	public String getNome () {
@@ -45,10 +40,6 @@ public class Funcionario {
 		return this.salario;
 	}
 
-	public char getSexo () {
-		return this.sexo;
-	}
-
 	public void setNome (String nome) {
 		this.nome = nome;
 	}
@@ -59,10 +50,6 @@ public class Funcionario {
 
 	public void setSalario (double salario) {
 		this.salario = salario;
-	}
-
-	public void setSexo (char sexo) {
-		this.sexo = sexo;
 	}
 
 }
