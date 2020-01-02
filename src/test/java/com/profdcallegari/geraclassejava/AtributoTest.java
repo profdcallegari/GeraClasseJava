@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 
 public class AtributoTest {
 
+    @Test
     public void testCasosBasicos() {
         final Atributo atributo = new Atributo("meuAtributoComNomeExtenso", 's');
         assertEquals(atributo.getTipoPorExtenso(), "String");
@@ -46,6 +47,15 @@ public class AtributoTest {
         assertEquals(atributo.getTipoPorExtenso(), "double");
         assertEquals(atributo.gerarDeclaracao(), "\tprivate double precoFinal;\n");
         assertEquals(atributo.gerarMetodoSet(), "\tpublic void setPrecoFinal (double precoFinal) {\n\t\tthis.precoFinal = precoFinal;\n\t}\n");
+    }
+
+    @Test
+    public void testCaseBoolean() {
+        final Atributo atributo = new Atributo("ativo", 'b');
+        assertEquals(atributo.getTipoPorExtenso(), "boolean");
+        assertEquals(atributo.gerarDeclaracao(), "\tprivate boolean ativo;\n");
+        assertEquals(atributo.gerarMetodoGet(), "\tpublic boolean isAtivo () {\n\t\treturn this.ativo;\n\t}\n");
+        assertEquals(atributo.gerarMetodoSet(), "\tpublic void setAtivo (boolean ativo) {\n\t\tthis.ativo = ativo;\n\t}\n");
     }
 
     @Test

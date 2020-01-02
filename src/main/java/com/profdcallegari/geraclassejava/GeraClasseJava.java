@@ -20,7 +20,7 @@ public class GeraClasseJava {
 
         if (demoMode) { // Executando versao de demonstracao
 
-            args = "Funcionario s:nome d:anoNasc f:salario c:sexo".split(" ");
+            args = "Funcionario s:nome d:anoNasc f:salario c:sexo b:ativo".split(" ");
             GeradorClasse.gerarClasse(args);
 
         } else { // Executando versao final
@@ -40,7 +40,7 @@ public class GeraClasseJava {
         System.out.println(CABECALHO);
         System.out.println("Gera o codigo-fonte de uma classe Java com getters & setters.");
         System.out.println("Uso:\n\tGeraClasseJava NomeClasse tipo:nomeAtributo1 [tipo:nomeAtributo2 ...]");
-        System.out.println("\tTipos: s=String, d=int, f=double, c=char");
+        System.out.println("\tTipos: s=String, d=int, f=double, c=char, b=boolean");
         System.out.println("Exemplo:\n\tjava -jar GeraClasseJava.jar Funcionario s:nome d:anoNasc f:salario c:sexo");
         System.out.println();
     }
