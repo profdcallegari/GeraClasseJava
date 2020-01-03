@@ -21,6 +21,7 @@
     <build>
         <pluginManagement>
             <plugins>
+            <!--
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
@@ -42,6 +43,7 @@
                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
                     </configuration>
                 </plugin>
+                -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
@@ -63,11 +65,12 @@
             </plugins>
         </pluginManagement>
         <plugins>
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
-
+            -->
             <!--
                 You can run jacoco in the default profile with:
                 mvn jacoco:prepare-agent test jacoco:report
@@ -86,6 +89,7 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.0.0</version>
             </plugin>
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -95,6 +99,7 @@
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
                 </configuration>
             </plugin>
+            -->
         </plugins>
     </reporting>
 
@@ -142,6 +147,7 @@
         - we want to break the build on any checkstyle violation.
         - we want to be able to publish coverage report to coveralls.
         -->
+        <!--
         <profile>
             <id>travis</id>
             <activation>
@@ -172,5 +178,6 @@
                 </plugins>
             </build>
         </profile>
+        -->
     </profiles>
 </project>
