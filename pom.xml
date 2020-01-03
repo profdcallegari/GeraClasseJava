@@ -9,6 +9,11 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <sonar.projectKey>profdcallegari_GeraClasseJava</sonar.projectKey>
+        <sonar.organization>profdcallegari</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>ac30a1a38798254cd7ef58060401d00e13d31f59</sonar.login>
     </properties>
     <dependencies>
         <dependency>
