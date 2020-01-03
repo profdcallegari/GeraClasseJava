@@ -1,6 +1,4 @@
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=profdcallegari_GeraClasseJava)](https://sonarcloud.io/dashboard?id=profdcallegari_GeraClasseJava)
-
-# GeraClasseJava
+# GeraClasseJava [![Build Status](https://travis-ci.org/profdcallegari/GeraClasseJava.svg?branch=master)](https://travis-ci.org/profdcallegari/GeraClasseJava) [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=profdcallegari_GeraClasseJava)
 Um gerador bastante simplificado de classes java via linha de comando.
 Gera o código-fonte de uma classe Java com construtor, getters & setters.
 
