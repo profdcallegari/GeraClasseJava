@@ -32,20 +32,20 @@ public class ClasseTest {
     @Test
     public void testCasosBasicos() {
         Classe classe = new Classe("MinhaClasse");
-        assertEquals(classe.getIdentificador(), "MinhaClasse");
-        assertEquals(classe.getQuantidadeAtributos(), 0);
-        assertEquals(classe.gerarInicioClasse(), "public class MinhaClasse {\n");
-        assertEquals(classe.gerarFimClasse(), "}\n");
+        assertEquals("MinhaClasse", classe.getIdentificador());
+        assertEquals(0, classe.getQuantidadeAtributos());
+        assertEquals("public class MinhaClasse {\n", classe.gerarInicioClasse());
+        assertEquals("}\n", classe.gerarFimClasse());
     }
 
     @Test
     public void testUmAtributoEConstrutor() {
         Classe classe = new Classe("Veiculo");
         classe.adicionarAtributo("placa", 's');
-        assertEquals(classe.getIdentificador(), "Veiculo");
-        assertEquals(classe.getQuantidadeAtributos(), 1);
+        assertEquals("Veiculo", classe.getIdentificador());
+        assertEquals(1, classe.getQuantidadeAtributos());
         String construtorGerado = classe.gerarConstrutor();
-        assertEquals(construtorGerado, "\tpublic Veiculo (String placa) {\n\t\tthis.setPlaca(placa);\n\t}\n");
+        assertEquals("\tpublic Veiculo (String placa) {\n\t\tthis.setPlaca(placa);\n\t}\n", construtorGerado);
     }
 
     
