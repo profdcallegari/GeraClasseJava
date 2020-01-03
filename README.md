@@ -1,3 +1,5 @@
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=profdcallegari_GeraClasseJava)](https://sonarcloud.io/dashboard?id=profdcallegari_GeraClasseJava)
+
 # GeraClasseJava
 Um gerador bastante simplificado de classes java via linha de comando.
 Gera o código-fonte de uma classe Java com construtor, getters & setters.
@@ -54,4 +56,3 @@ public class Funcionario {
 
 }
 ```
-
