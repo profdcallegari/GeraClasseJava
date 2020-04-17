@@ -1,5 +1,6 @@
 package com.profdcallegari.geraclassejava;
 
+// Classe Atributo
 public class Atributo {
     private String identificador;
     private char tipo;
