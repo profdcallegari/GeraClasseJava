@@ -3,7 +3,7 @@ package com.profdcallegari.geraclassejava;
 import java.util.ArrayList;
 import java.util.List;
 
-
+// Classe Classe
 public class Classe {
     private String identificador;
     private List<Atributo> atributos;
