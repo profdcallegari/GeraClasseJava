@@ -14,6 +14,12 @@ public class Classe {
         else
             this.identificador = "NOMECLASSE";
         
+        // [Refactor] Usar tratamento de Excecoes
+        if (!Identificador.isValido(identificador)) {
+            System.err.printf("Identificador invalido: '%s'.\n", identificador);
+            System.exit(1);
+        }
+
         atributos = new ArrayList<>();
     }
 
