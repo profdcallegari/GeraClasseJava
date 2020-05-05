@@ -7,6 +7,12 @@ public class Atributo {
 
     public Atributo(String idAtr, char tipoAtr) {
         this.identificador = idAtr.trim();
+
+        // [Refactor] Usar tratamento de Excecoes
+        if (!Identificador.isValido(identificador)) {
+            System.err.printf("Identificador invalido: '%s'.\n", identificador);
+            System.exit(1);
+        }
         
         if ("sdfcb".contains(""+tipoAtr))
             this.tipo = tipoAtr;
