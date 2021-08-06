@@ -2,6 +2,7 @@ package com.profdcallegari.geraclassejava;
 
 import java.io.*;
 
+// Gerador de Classes Java
 public class GeradorClasse {
 
     public static void gerarClasse(String[] args) {
